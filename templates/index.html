@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tra cứu SN Camera</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>🔍 Tra cứu Verification Code từ Số SN</h2>
+    <form method="POST">
+        <label>Nhập SN:</label>
+        <input type="text" name="sn" required>
+        <button type="submit">Tra cứu</button>
+    </form>
+    {% if result %}
+        <h3>Kết quả: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
